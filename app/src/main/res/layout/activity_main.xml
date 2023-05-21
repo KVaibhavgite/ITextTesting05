@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:text="987654321"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="224dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/editTextNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp" />
+
+    <EditText
+        android:id="@+id/qty1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignTop="@id/spinner1"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        android:text="1"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/spinner1"
+        android:layout_toEndOf="@id/spinner1"
+        android:layout_marginStart="15dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="224dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/spinner1"
+        android:layout_alignEnd="@id/spinner1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@id/spinner1"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="6dp" />
+
+    <EditText
+        android:id="@+id/qty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignTop="@id/spinner2"
+        android:layout_marginTop="0dp"
+        android:inputType="number"
+        android:text="2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/spinner1"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/spinner1" />
+
+
+    <Button
+        android:id="@+id/buttonSavePrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="47dp"
+        android:text="Save and Print" />
+
+    <Button
+        android:id="@+id/buttonPrintOld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_alignTop="@id/buttonSavePrint"
+        android:text="Print Old"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@id/buttonSavePrint"
+        android:layout_marginStart="47dp"
+        android:layout_toRightOf="@id/buttonSavePrint" />
+
+
+
+
+
+
+</RelativeLayout>
